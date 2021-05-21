@@ -1,0 +1,31 @@
+﻿@model UserRegisterModel
+
+<form asp-controller="home" asp-action="UserEdit" method="post">
+    <input type="hidden" asp-for="UserId"  value="@Model.UserId" />
+    <div class="form-group">
+        <label for="exampleInputEmail1">FirstName</label>
+        <input type="text" class="form-control" asp-for="FirstName" aria-describedby="emailHelp" placeholder="Enter FirstName">
+    </div>
+        
+    <div class="form-group">
+        <label for="exampleInputEmail1">LastName</label>
+        <input type="text" class="form-control" asp-for="LastName" aria-describedby="emailHelp" placeholder="Enter LastName">
+    </div>
+
+    <div class="form-group">
+        <label for="exampleInputEmail1">UserName</label>
+        <input type="text" class="form-control" asp-for="UserName" aria-describedby="emailHelp" placeholder="Enter UserName">
+    </div>
+
+    <div class="form-group">        
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" asp-for="EMail" aria-describedby="emailHelp" placeholder="Enter email">
+    </div>
+
+    <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="text" class="form-control" asp-for="Password" placeholder="Password">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
